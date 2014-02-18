@@ -27,6 +27,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'mongoid', github: 'mongoid/mongoid'
 gem "font-awesome-rails"
+gem 'rspec-rails', '~> 2.13'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
