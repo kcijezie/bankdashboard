@@ -1,0 +1,49 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accountname:</strong>
+  <%= @customer.AccountName %>
+</p>
+
+<p>
+  <strong>Accountnumber:</strong>
+  <%= @customer.AccountNumber %>
+</p>
+
+<p>
+  <strong>Transdate:</strong>
+  <%= @customer.TransDate %>
+</p>
+
+<p>
+  <strong>Reference:</strong>
+  <%= @customer.Reference %>
+</p>
+
+<p>
+  <strong>Valuedate:</strong>
+  <%= @customer.ValueDate %>
+</p>
+
+<p>
+  <strong>Debit:</strong>
+  <%= @customer.Debit %>
+</p>
+
+<p>
+  <strong>Credit:</strong>
+  <%= @customer.Credit %>
+</p>
+
+<p>
+  <strong>Balance:</strong>
+  <%= @customer.Balance %>
+</p>
+
+<p>
+  <strong>Remarks:</strong>
+  <%= @customer.Remarks %>
+</p>
+
+<%= link_to 'Edit', edit_customer_path(@customer) %> |
+<%= link_to 'Back', customers_path %>

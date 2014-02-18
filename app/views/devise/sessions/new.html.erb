@@ -1,0 +1,39 @@
+<% @title = "Login" %>
+
+<div class="container">
+         <div class="row">
+            <div class="col-md-4 col-md-offset-4">
+			    <div class="login-panel panel panel-default">
+				
+                    <div class="panel-heading">
+                        <h3 class="panel-title">Please Sign In</h3>
+                    </div>
+                    <div class="panel-body">
+					<p class="notice"><%= notice %></p>
+					<p class="alert"><%= alert %></p>
+					
+                        <%= form_for(resource, :as => resource_name, :url => session_path(resource_name)) do |f| %>
+                            <fieldset>
+                                <div class="form-group">
+                                    <label for="user_accountnumber">Account Number</label><%= f.text_field :accountnumber, class: 'form-control', autofocus: true, placeholder: 'Account Number', :autofocus => true %>
+                                </div>
+                                <div class="form-group">
+                                    <%= f.label :password %><%= f.password_field :password, class: 'form-control', autofocus: true, placeholder: 'Password'%>
+                                </div>
+								<% if devise_mapping.rememberable? -%>
+                                <div class="checkbox">
+                                    
+                                        <%= f.check_box :remember_me %> <%= f.label :remember_me %>
+                                    
+                                </div>
+								<% end -%>
+                                <!-- Change this to a button or input when using this as a form -->
+                                <%= f.submit "Sign in", class: 'btn btn-lg btn-success btn-block'%>
+                            </fieldset>
+                       <% end %>
+					   <%= render "devise/shared/links" %>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>

@@ -1,0 +1,2 @@
+module TransactiondetailsHelper
+end

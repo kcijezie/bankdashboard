@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  AccountName: MyString
+  AccountNumber: MyString
+  TransDate: MyString
+  Reference: 1
+  ValueDate: MyString
+  Debit: 1
+  Credit: 1
+  Balance: 1
+  Remarks: MyText
+
+two:
+  AccountName: MyString
+  AccountNumber: MyString
+  TransDate: MyString
+  Reference: 1
+  ValueDate: MyString
+  Debit: 1
+  Credit: 1
+  Balance: 1
+  Remarks: MyText
