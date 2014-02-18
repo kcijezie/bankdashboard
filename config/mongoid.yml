@@ -10,6 +10,7 @@ development:
       # of host:port pairs. (required)
       hosts:
         - troup.mongohq.com:10082
+<% if ENV['MONGOHQ_URL'] %>
 production:
     sessions:
       default:
@@ -17,3 +18,4 @@ production:
         options:
           skip_version_check: true
           safe: true
+<% end %>
