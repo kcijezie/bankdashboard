@@ -27,7 +27,7 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'mongoid', github: 'mongoid/mongoid'
 gem "font-awesome-rails"
-gem 'rspec-rails', '~> 2.13'
+#gem 'rspec-rails', '~> 2.13'
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -48,5 +48,5 @@ end
 gem 'devise'
 gem 'jquery-turbolinks'
 gem 'rails_12factor'
-gem 'bson_ext'
-gem 'mongoid_slug'
+#gem 'bson_ext'
+#gem 'mongoid_slug'
