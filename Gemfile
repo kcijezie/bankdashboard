@@ -48,5 +48,5 @@ end
 gem 'devise'
 gem 'jquery-turbolinks'
 gem 'rails_12factor'
-#gem 'bson_ext'
-#gem 'mongoid_slug'
+gem 'bson_ext'
+gem 'mongoid_slug'
